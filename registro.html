@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - AdviSeal</title>
+  <link rel="stylesheet" href="registro.css" />
+  <link rel="icon" href="AdviSeal_Icono.ico" type="image/x-icon"/>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Crear Cuenta</h1>
+    <input type="text" id="nombre" placeholder="Nombre completo" />
+    <input type="email" id="correo" placeholder="Correo electrónico" />
+    <input type="password" id="contrasena" placeholder="Contraseña" />
+
+    <select id="grado">
+      <option disabled selected>Grado</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+    <select id="grupo">
+      <option disabled selected>Grupo</option>
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+      <option value="e">E</option>
+      <option value="f">F</option>
+      <option value="g">G</option>
+    </select>
+
+    <select id="especialidad">
+      <option disabled selected>Especialidad</option>
+      <option value="Programación">Programación</option>
+      <option value="Contabilidad">Contabilidad</option>
+      <option value="Laboratorista Clínico">Laboratorista Clínico</option>
+      <option value="Mantenimiento Automotriz">Mantenimiento Automotriz</option>
+    </select>
+
+    <button id="btnRegistro">Registrarse</button>
+    <p class="login-link">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+  </div>
+
+  <script type="module" src="registro.js"></script>
+</body>
+</html>

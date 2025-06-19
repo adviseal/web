@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión | AdviSeal</title>
+  <link rel="icon" href="AdviSeal_Icono.ico">
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Iniciar Sesión</h1>
+    <form id="loginForm" autocomplete="on">
+        <input type="email" id="correo" placeholder="Correo electrónico" autocomplete="email" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" autocomplete="current-password" required />
+        <button type="submit">Entrar</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>AdviSeal | Tareas 2F</title>
+  <link rel="icon" href="AdviSeal_Icono.ico">
+  <link rel="stylesheet" href="1.css"/>
+</head>
+<body>
+  <header>
+    <h1>Tareas de Programación 2F</h1>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="2f.html">Tareas 2F</a>
+      <button id="cerrarSesion">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <section class="formulario">
+    <h2>Agregar Nueva Tarea</h2>
+    <form id="formTarea">
+      <input id="titulo" placeholder="Título" required/>
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <label>Fecha de entrega:</label>
+      <input type="date" id="fecha" required/>
+      <label>Hora de entrega:</label>
+      <input type="time" id="hora" required/>
+      <select id="materia" required>
+        <option disabled selected>Materia Tronco Común</option>
+        <option>Pensamiento matemático II</option>
+        <option>Conversión de la energía y su interacción con la materia II</option>
+        <option>Lengua y comunicación II</option>
+        <option>Ciencias sociales II</option>
+        <option>Cultura digital II</option>
+        <option>Inglés II</option>
+        <option>Recurso socioemocional II</option>
+        <option disabled selected>Materias Especialidades | 2A,B,C,D,E,F,G</option>
+        <option>Diseña software de sistemas informáticos</option>
+        <option>Codifica software de sistemas informáticos</option>
+        <option>Implementa software de sistemas informáticos</option>
+      </select>
+      <select id="prioridad" required>
+        <option disabled selected>Prioridad</option>
+        <option>Alta</option>
+        <option>Media</option>
+        <option>Baja</option>
+      </select>
+      <button type="submit">Agregar Tarea</button>
+    </form>
+  </section>
+
+  <section class="filtros">
+    <h3>Filtrar tareas</h3>
+    <select id="filtroMateria">
+      <option value="">Todas las materias</option>
+      <option>Pensamiento matemático II</option>
+        <option>Conversión de la energía y su interacción con la materia II</option>
+        <option>Lengua y comunicación II</option>
+        <option>Ciencias sociales II</option>
+        <option>Cultura digital II</option>
+        <option>Inglés II</option>
+        <option>Recurso socioemocional II</option>
+        <option disabled selected>Materias Especialidades | 2A,B,C,D,E,F,G</option>
+        <option>Diseña software de sistemas informáticos</option>
+        <option>Codifica software de sistemas informáticos</option>
+        <option>Implementa software de sistemas informáticos</option>
+    </select>
+    <select id="filtroPrioridad">
+      <option value="">Todas las prioridades</option>
+      <option>Alta</option>
+      <option>Media</option>
+      <option>Baja</option>
+    </select>
+  </section>
+
+  <section id="listaTareas" class="listaTareas"></section>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="1.js"></script>
+
+    <!--EmailJS-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    emailjs.init("TU_PUBLIC_KEY"); // Reemplaza con tu Public Key de EmailJS
+    </script>
+
+</body>
+</html>

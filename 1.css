@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0f4c75, #3282b8);
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header nav a,
+header nav button {
+  background: #ffffff10;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formulario {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.formulario h2 {
+  margin-bottom: 1rem;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select,
+.formulario button {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.formulario button {
+  background: #00c3ff;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.filtros {
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.filtros h3 {
+  margin-bottom: 0.5rem;
+}
+
+.filtros select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.listaTareas {
+  margin: 1rem;
+}
+
+.tarea {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tarea h3 {
+  margin-bottom: 0.4rem;
+}
+
+.tarea p {
+  margin: 0.3rem 0;
+}
+
+.tarea small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.tarea button {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
